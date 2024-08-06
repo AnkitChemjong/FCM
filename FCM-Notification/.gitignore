@@ -22,4 +22,5 @@ dist-ssr
 *.ntvs*
 *.njsproj
 *.sln
+.gitignore
 *.sw?
