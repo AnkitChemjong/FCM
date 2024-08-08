@@ -1,7 +1,7 @@
 import React,{ useEffect, useState } from 'react';
 import { getToken} from 'firebase/messaging';
 import { messaging,onMessaging} from './utils/firebaseUtils.js';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import axios from 'axios';
 
 import './App.css'
@@ -70,7 +70,6 @@ function App() {
 
   return (
     <>
-    <ToastContainer/>
      <button onClick={sendMessage}>Click</button>
      <p>{token? token:null}</p>
     </>
