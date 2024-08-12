@@ -47,24 +47,24 @@ function App() {
       deviceToken:token
     }
     const result=await axios.post(`${import.meta.env.VITE_BACKENDURL}/api/firebase/send-notification`,message);
-    // if(result.status===200){
-    //   toast.success(
-    //     <div>
-    //       <strong>Notification sent Successfully</strong>
+    if(result.status===200){
+      toast.success(
+        <div>
+          <strong>Notification sent Successfully</strong>
         
-    //     </div>,
-    //     { position: 'top-right' }
-    //   );
-    // }
-    // else{ toast.error(
-    //   <div>
-    //     <strong>Error</strong>
+        </div>,
+        { position: 'top-right' }
+      );
+    }
+    else{ toast.error(
+      <div>
+        <strong>Error</strong>
       
-    //   </div>,
-    //   { position: 'top-right' }
-    // );
+      </div>,
+      { position: 'top-right' }
+    );
 
-    // }
+    }
   }
 
 
