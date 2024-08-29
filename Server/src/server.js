@@ -19,5 +19,5 @@ app.use(express.json());
 // });
 app.use('/api/firebase',notificationRoute);
 app.listen(port, () => {
-console.log(`Example app listening on port ${port}`);
+console.log(`Example app listening on port: ${port}`);
 });
